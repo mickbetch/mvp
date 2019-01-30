@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,800,900|Montserrat:400,500,800"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__wrapper">
+    <div class="header__logo">
+      <img src="images/logo.png" alt="Open Packaging Network" class="header__logo-icon">
+    </div>
+    <div class="header__balanse">
+      <p class="header__balatse-title">BALANCE:</p>
+      <p class="header__balanse__text"><span>9,981,050</span> OPK</p>
+    </div>
+    <div class="header__notification">
+      <img src="images/notification.png" alt="notification">
+    </div>
+    <div class="header__company">
+      <img class="header__company-icon" src="images/acronic.png" alt="company">
+      <span class="header__company-name">Arconic</span>
+    </div>
+  </div>
+</header>
+<div class="main-wrapper">
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="orders.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-orders"></use>
+          </svg>
+          <span>Orders</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link main-nav__link--active">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-neworder"></use>
+          </svg>
+          <span>New order</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="27">
+            <use xlink:href="images/sprite.svg#icon-myorders"></use>
+          </svg>
+          <span>My orders</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-companyprofile"></use>
+          </svg>
+          <span>Company profile</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-documents"></use>
+          </svg>
+          <span>Documents</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="token.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-buytokens"></use>
+          </svg>
+          <span>Buy Token</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="rating.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-rating"></use>
+          </svg>
+          <span>Rating</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="logistics.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-logistic"></use>
+          </svg>
+          <span>Logistics</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="password.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-settings"></use>
+          </svg>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main class="main">
+    <div class="main__wrapper">
+      <section class="new-order">
+        <div class="new-order__wrapper">
+          <header class="new-order__header">
+            <h2 class="new-order__title">New order</h2>
+            <div class="new-order__button-group">
+              <a href="#tab1" class="new-order__button tabs__button tabs__button--active">Product</a>
+              <a href="#tab2" class="new-order__button tabs__button">Service</a>
+            </div>
+            <div class="new-order__line"></div>
+          </header>
+
+          <div class="new-order__content">
+            <form id="tab1" class="new-order__form tabs__content" action="#">
+              <h4 class="new-order__form-subtitle">STEP 1</h4>
+              <ul class="new-order__input-list">
+                <li class="new-order__input-item new-order__input-item--header">
+                  <label for="new-order-header" class="new-order__label">Header</label>
+                  <input class="new-order__input" name="header" id="new-order-header" placeholder="Write your header...">
+                </li>
+                <li class="new-order__input-item new-order__input-item--for">
+                  <label for="new-order-for" class="new-order__label">Order for</label>
+                  <select class="new-order__select" name="new-order-for" id="new-order-for">
+                      <option value="1">buy</option>
+                      <option value="2">sell</option>
+                      <option value="3">looking for performer</option>
+                    </select>
+                </li>
+              </ul>
+              <h4 class="new-order__form-subtitle">STEP 2</h4>
+              <ul class="new-order__input-list">
+                <li class="new-order__input-item new-order__input-item--product">
+                  <label for="new-order-product" class="new-order__label">Product name</label>
+                  <textarea class="new-order__textarea" name="product" id="new-order-product" placeholder="Write product name..."></textarea>
+                </li>
+                <li class="new-order__input-item new-order__input-item--description">
+                  <label for="new-order-description" class="new-order__label">Description</label>
+                  <textarea class="new-order__textarea" name="description" id="new-order-description" placeholder="Write your description......"></textarea>
+                </li>
+              </ul>
+              <h4 class="new-order__form-subtitle">STEP 3</h4>
+              <ul class="new-order__input-list">
+                <li class="new-order__input-item new-order__input-item--material">
+                  <label for="new-order-material" class="new-order__label">Choose material</label>
+                  <select class="new-order__select" name="new-order-material" id="new-order-material">
+                    <option value="1">plastic</option>
+                    <option value="2">paper</option>
+                    <option value="3">carton</option>
+                    <option value="3">carton</option>
+                    <option value="3">carton</option>
+                    <option value="3">carton</option>
+                  </select>
+                  <button class=" button--border new-order__material-button" type="button">Choose material category</button>
+                </li>
+                <li class="new-order__input-item new-order__input-item--packaging">
+                  <label for="new-order-packaging" class="new-order__label">Order for</label>
+                  <select class="new-order__select" name="new-order-packaging" id="new-order-packaging">
+                    <option value="1">primary packaging</option>
+                    <option value="2">SELL</option>
+                    <option value="3">LOOKING FOR PERFORMER</option>
+                  </select>
+                  <button class=" button--border new-order__packaging-button" type="button">Choose packaging category</button>
+                </li>
+              </ul>
+              <h4 class="new-order__form-subtitle">STEP 4</h4>
+              <ul class="new-order__input-list">
+                <li class="new-order__input-item new-order__input-item--end">
+                  <label for="new-order-end" class="new-order__label new-order__label--end">Tender end</label>
+                  <div>
+                    <input class="new-order__input new-order__input--end" id="new-order-end" type="date">
+                  </div>
+                </li>
+                <li class="new-order__input-item new-order__input-item--location">
+                  <label for="new-order-location" class="new-order__label new-order__label--location">Location</label>
+                  <div>
+                    <input class="new-order__input new-order__input--location" id="new-order-location" type="text" placeholder="Set location...">
+                  </div>
+                </li>
+                <li class="new-order__input-item new-order__input-item--price">
+                  <div class="new-order__label-group">
+                    <label for="new-order-price" class="new-order__label new-order__label--price">$, Price</label>
+                    <span class="new-order__price-tooltype"></span>
+                    <p class="new-order__tooltype-block">We will automatically convert
+                      dollars into the currency OPK</p>
+                  </div>
+                  <div class="new-order__price-group">
+                    <div>
+                      <input class="new-order__input new-order__input--price" id="item-price" type="number" placeholder="Write your offer...">
+                    </div>
+                    <output class="new-order__output" name="output-price">
+                      <span>00.00</span>
+                      <span>OPK</span>
+                    </output>
+                  </div>
+                </li>
+              </ul>
+              <button class="button new-order__publish-button">Publish</button>
+            </form>
+            <form id="tab2" class="new-order__form tabs__content" action="#">
+              <h4 class="new-order__form-subtitle">STEP 1</h4>
+              <ul class="new-order__input-list">
+                <li class="new-order__input-item new-order__input-item--header">
+                  <label for="new-order-header" class="new-order__label">Header</label>
+                  <input class="new-order__input" name="header" id="new-order-header" placeholder="Write your header...">
+                </li>
+                <li class="new-order__input-item new-order__input-item--for">
+                  <label for="new-order-for" class="new-order__label">Order for</label>
+                  <select class="new-order__select" name="new-order-for" id="new-order-for">
+                    <option value="3">looking for performer</option>
+                    <option value="1">buy</option>
+                    <option value="2">sell</option>
+                  </select>
+                </li>
+              </ul>
+              <h4 class="new-order__form-subtitle">STEP 2</h4>
+              <ul class="new-order__input-list">
+                <li class="new-order__input-item new-order__input-item--description">
+                  <label for="new-order-description" class="new-order__label">Description</label>
+                  <textarea class="new-order__textarea" name="description" id="new-order-description" placeholder="Write your description......"></textarea>
+                </li>
+                <li class="new-order__input-item new-order__input-item--service">
+                  <label for="new-order-product" class="new-order__label">Service category</label>
+                  <textarea class="new-order__textarea" name="product" id="new-order-product" placeholder="Write service category..."></textarea>
+                </li>
+              </ul>
+              <h4 class="new-order__form-subtitle">STEP 3</h4>
+              <ul class="new-order__input-list">
+                <li class="new-order__input-item new-order__input-item--end">
+                  <label for="new-order-end" class="new-order__label new-order__label--end">Tender end</label>
+                  <div>
+                    <input class="new-order__input new-order__input--end" id="new-order-end" type="date">
+                  </div>
+                </li>
+                <li class="new-order__input-item new-order__input-item--location">
+                  <label for="new-order-location" class="new-order__label new-order__label--location">Location</label>
+                  <div>
+                    <input class="new-order__input new-order__input--location" id="new-order-location" type="text" placeholder="Set location...">
+                  </div>
+                </li>
+                <li class="new-order__input-item new-order__input-item--price">
+                  <div class="new-order__label-group">
+                    <label for="new-order-price" class="new-order__label new-order__label--price">$, Price</label>
+                    <span class="new-order__price-tooltype"></span>
+                    <p class="new-order__tooltype-block">We will automatically convert
+                      dollars into the currency OPK</p>
+                  </div>
+                  <div class="new-order__price-group">
+                    <div>
+                      <input class="new-order__input new-order__input--price" id="item-price" type="number" placeholder="Write your offer...">
+                    </div>
+                    <output class="new-order__output" name="output-price">
+                      <span>00.00</span>
+                      <span>OPK</span>
+                    </output>
+                  </div>
+                </li>
+              </ul>
+              <button class="button new-order__publish-button">Publish</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <ul class="footer__info-list">
+          <li class="footer__info-item">
+            <a href="#">TERMS AND CONDITIONS</a>
+          </li>
+          <li class="footer__info-item">
+            <a href="#">PRIVACY POLICY</a>
+          </li>
+          <li class="footer__info-item">
+            <a href="#">COPYRIGHT</a>
+          </li>
+          <li class="footer__info-item">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-reddit-alien"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-medium-m"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+</div>
+<div class="modal modal--material">
+  <h3 class="modal__title">Material category</h3>
+  <div class="modal__form">
+    <ul class="modal__list">
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--material" id="pe" type="checkbox">
+        <label for="pe" class="modal__label">Plastic - PE</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--material" id="pet" type="checkbox">
+        <label for="pet" class="modal__label">Plastic - PET</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--material" id="hdpe" type="checkbox">
+        <label for="hdpe" class="modal__label">Plastic - HDPE, PEHD</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--material" id="pp" type="checkbox">
+        <label for="pp" class="modal__label">Plastic - PP</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--material" id="ldpe" type="checkbox">
+        <label for="ldpe" class="modal__label">Plastic - LDPE, PELD</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--material" id="ps" type="checkbox">
+        <label for="ps" class="modal__label">Plastic - PS</label>
+      </li>
+    </ul>
+    <button class="button modal__button modal__button--material">Confirm</button>
+  </div>
+</div>
+<div class="modal modal--packaging" >
+  <h3 class="modal__title">Packaging category</h3>
+  <div class="modal__form">
+    <ul class="modal__list">
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="aerosol" type="checkbox">
+        <label for="aerosol" class="modal__label">Aerosol Cans</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="closure" type="checkbox">
+        <label for="closure" class="modal__label">Closure Components</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="airless" type="checkbox">
+        <label for="airless" class="modal__label">Airless Packs</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="flexibles" type="checkbox">
+        <label for="flexibles" class="modal__label">Flexibles</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="anodized" type="checkbox">
+        <label for="anodized" class="modal__label">Anodized Components</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="sleeves" type="checkbox">
+        <label for="sleeves" class="modal__label">Sleeves</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="bottles" type="checkbox">
+        <label for="bottles" class="modal__label">Bottles</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="cosmetic" type="checkbox">
+        <label for="cosmetic" class="modal__label">Cosmetic Components</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="jars" type="checkbox">
+        <label for="jars" class="modal__label">Jars, Pots</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="pharmaceutical" type="checkbox">
+        <label for="pharmaceutical" class="modal__label">Pharmaceutical Components</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="tubs" type="checkbox">
+        <label for="tubs" class="modal__label">Tubs</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="food" type="checkbox">
+        <label for="food" class="modal__label">Food, Drink Service Components</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="tubes" type="checkbox">
+        <label for="tubes" class="modal__label">Tubes</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="disponsable" type="checkbox">
+        <label for="disponsable" class="modal__label">Disposable Food Containers</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="buckets" type="checkbox">
+        <label for="buckets" class="modal__label">Buckets, Palls</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="food-cans" type="checkbox">
+        <label for="food-cans" class="modal__label">Food Cans</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="primary" type="checkbox">
+        <label for="primary" class="modal__label">Primary Boxes, Cases</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="cartoons" type="checkbox">
+        <label for="cartoons" class="modal__label">Cartoons/Bricks</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="metal-tins" type="checkbox">
+        <label for="metal-tins" class="modal__label">Metal Tins</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="beverage" type="checkbox">
+        <label for="beverage" class="modal__label">Beverage Cans</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="caps" type="checkbox">
+        <label for="caps" class="modal__label">Caps Lids</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="beverage-capsules" type="checkbox">
+        <label for="beverage-capsules" class="modal__label">Beverage Capsules</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="stoppers" type="checkbox">
+        <label for="stoppers" class="modal__label">Stoppers</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="custom-primary" type="checkbox">
+        <label for="custom-primary" class="modal__label">Custom Primary Packaging</label>
+      </li>
+      <li class="modal__list-item">
+        <input class="visually-hidden modal__checkbox modal__checkbox--packging" id="dispensing" type="checkbox">
+        <label for="dispensing" class="modal__label">Dispensing Closures</label>
+      </li>
+    </ul>
+    <button class="button modal__button modal__button--packaging">Confirm</button>
+  </div>
+</div>
+<div class="modal__overlay"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $('.main-nav__link').click(function () {
+    $('.main-nav__link--active').removeClass('main-nav__link--active');
+    $(this).addClass('main-nav__link--active');
+  });
+</script>
+<script>
+  $('document').ready(function() {
+    $('.tabs__content').hide();
+    $('.tabs__content:first').show();
+    $('.tabs__button:first').addClass('tabs__button--active');
+
+    $('.tabs__button').click(function(evt) {
+      $('.tabs__button').removeClass('tabs__button--active');
+      $(this).addClass('tabs__button--active');
+      $('.tabs__content').hide();
+
+      var selectTab = $(this).attr('href');
+      $(selectTab).fadeIn();
+    });
+  });
+</script>
+<script src="js/modal.js"></script>
+</body>
+</html>

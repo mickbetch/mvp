@@ -1,0 +1,115 @@
+.sign-sl {
+  width: 60%;
+
+  @media #{$noDesktop} {
+    width: 100%;
+  }
+}
+
+.sign-sl__block {
+  max-width: 455px;
+  width: 100%;
+}
+
+.sign-sl__text {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.sign-sl__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* slider styles */
+
+.swiper-container {
+  height: 100%;
+  width: 100%;
+}
+
+.sign-sl__slide {
+  display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+  padding-left: 10%;
+  padding-right: 20px;
+  padding-bottom: 100px;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //-webkit-filter: grayscale(100%);
+  //-moz-filter: grayscale(100%);
+  //-ms-filter: grayscale(100%);
+  //-o-filter: grayscale(100%);
+  //filter: grayscale(100%);
+  //filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+  //filter: gray; /* IE 6-9 */
+  //-webkit-filter: grayscale(1);
+}
+
+.sign-sl__slide--first {
+  background-image: url(../images/slider-gr1.png);
+}
+.sign-sl__slide--second {
+  background-image: url(../images/slider-gr2.png);
+}
+.sign-sl__slide--third {
+  background-image: url(../images/slider-gr3.png);
+}
+.sign-sl__slide--fourth {
+  background-image: url(../images/slider-gr4.png);
+}
+.sign-sl__slide--fifth {
+  background-image: url(../images/slider-gr5.png);
+}
+
+.sign-sl__button {
+  top: auto;
+  bottom: 120px;
+  background-size: 9px 16px;
+
+  @media #{$noDesktop} {
+    bottom: 30px;
+  }
+}
+
+.sign-sl__button--prev {
+  left: auto;
+  right: 150px;
+  background-image: url(../images/arrow-left.png);
+}
+
+.sign-sl__button--next {
+  right: 90px;
+  background-image: url(../images/arrow-right.png);
+}
+
+.sign-sl__pagination {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 170px !important;
+  padding-right: 52px;
+
+  @media #{$noDesktop} {
+    bottom: 80px !important;
+  }
+}
+
+.sign-sl__pagination .swiper-pagination-bullet {
+  width: 25px;
+  height: 7px;
+  opacity: 1;
+  background-color: #737373;
+  border-radius: 4px;
+}
+
+.sign-sl__pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+

@@ -1,0 +1,164 @@
+.order__back-button {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  margin-bottom: 24px;
+  padding-left: 24px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #19233D;
+
+  span {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.order__title {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.order__item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.order__item-header {
+  padding: 32px 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #DEE2ED;
+}
+
+.order__item-company {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 16px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 500;
+  }
+}
+
+.order__price-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #066AFF;
+}
+
+.order__item-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 40px 32px;
+}
+
+.order__item-content2 {
+  display: flex;
+  padding: 0 40px 24px;
+}
+
+.order__item-content2 .order__item-block {
+  margin-right: 24px;
+}
+
+.order__item-block {
+  &--order {
+    width: 20%;
+  }
+
+  &--type {
+    width: 20%;
+  }
+
+  &--expire {
+    width: 10%;
+  }
+
+  &--category {
+    width: 14%;
+  }
+
+  &--location {
+    width: 16%;
+  }
+
+  &--material {
+    width: 12%;
+  }
+
+  &--mcategory {
+    width: 15%;
+  }
+
+  &--package {
+    width: 20%;
+  }
+
+  &--pcatgory {
+    width: 20%;
+  }
+}
+
+.order__order-type {
+  margin: 0;
+  font-weight: 500;
+  color: #066AFF;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.order__order-text {
+  margin: 0;
+}
+
+.order__item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px 40px 32px;
+}
+
+.order__number {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #B2B2B2;
+  letter-spacing: 0.02em;
+}
+
+.order__buttons-group {
+  display: flex;
+}
+
+.order__button {
+  width: 180px;
+  margin-right: 16px;
+  padding: 13px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.order__show-button {
+  width: 45px;
+  height: 45px;
+  background-color: #1E85FF;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #066aff;
+  }
+}

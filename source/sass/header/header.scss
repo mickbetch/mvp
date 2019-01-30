@@ -1,0 +1,97 @@
+.header {
+  height: 120px;
+}
+
+.header__wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.header__logo {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  border-right: 1px solid #EDEEF0;
+  border-bottom: 1px solid #EDEEF0;
+}
+
+.header__balanse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 32px;
+}
+
+.header__balatse-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #B2B2B2;
+  letter-spacing: 0.02em;
+}
+
+.header__balanse__text {
+  //position: relative;
+  margin: 0;
+  padding-left: 32px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  top: 5px;
+  //  left: 0;
+  //  width: 16px;
+  //  height: 14px;
+  //  background-image: url(../images/icon-balanse.png);
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //}
+}
+
+.header__notification {
+  position: relative;
+  width: 112px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #EDEEF0;
+  border-left: 1px solid #EDEEF0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border: 2px solid #065BFF;
+    border-radius: 50%;
+  }
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.header__company {
+  min-width: 185px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 32px;
+  padding-right: 24px;
+}
+
+.header__company-icon {
+  margin-right: 15px;
+}

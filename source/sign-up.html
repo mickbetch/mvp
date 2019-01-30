@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,800,900|Montserrat:400,500,800"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="sign-wrapper sign-wrapper--up">
+  <section class="sign">
+    <header class="sign__header">
+      <div class="sign__header-wrapper">
+        <a class="sign__logo" href="#">
+          <img src="images/logo.png" alt="Open Packaging Network">
+        </a>
+        <p class="sign__header-text">
+          Open Packaging<br>
+          Network
+        </p>
+      </div>
+    </header>
+    <div class="sign__content">
+      <h1 class="sign__title">
+        Sign Up
+      </h1>
+      <form class="sign__form" action="#" method="post">
+        <div class="sign__input-group sign__input-group--email">
+          <input class="sign__input" id="email-in" type="text" placeholder="Enter email">
+          <label for="email-in" class="sign__label sign__label--email">Email</label>
+        </div>
+        <div class="sign__input-group sign__input-group--password">
+          <input class="sign__input" id="password-up1" type="password" placeholder="Enter password">
+          <label for="password-up1" class="sign__label sign__label--password">Password</label>
+        </div>
+        <div class="sign__input-group sign__input-group--password">
+          <input class="sign__input" id="password-up2" type="password" placeholder="Enter password">
+          <label for="password-up2" class="sign__label sign__label--password">Repeat password</label>
+        </div>
+        <a href="#" class="sign__forgot-link">Forgot password?</a>
+        <button class="sign__button">Sign up</button>
+        <p class="sign__text-up">
+          <span>Don’t have an account?</span>
+          <a href="#">Sign Up!</a>
+        </p>
+      </form>
+    </div>
+  </section>
+  <section class="sign-sl">
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide sign-sl__slide sign-sl__slide--first">
+          <div class="sign-sl__block">
+            <p class="sign-sl__text">
+              Open Source Platform, decentralized ecosystem for high growth packaging industry participants and related services
+            </p>
+            <a href="" class="sign-sl__link">Learn more</a></div>
+        </div>
+        <div class="swiper-slide sign-sl__slide sign-sl__slide--second">
+          <div class="sign-sl__block">
+            <p class="sign-sl__text">
+              Open Source Platform, decentralized ecosystem for high growth packaging industry participants and related services
+            </p>
+            <a href="" class="sign-sl__link">Learn more</a></div>
+        </div>
+        <div class="swiper-slide sign-sl__slide sign-sl__slide--third">
+          <div class="sign-sl__block">
+            <p class="sign-sl__text">
+              Open Source Platform, decentralized ecosystem for high growth packaging industry participants and related services
+            </p>
+            <a href="" class="sign-sl__link">Learn more</a></div>
+        </div>
+        <div class="swiper-slide sign-sl__slide sign-sl__slide--fourth">
+          <div class="sign-sl__block">
+            <p class="sign-sl__text">
+              Open Source Platform, decentralized ecosystem for high growth packaging industry participants and related services
+            </p>
+            <a href="" class="sign-sl__link">Learn more</a></div>
+        </div>
+        <div class="swiper-slide sign-sl__slide sign-sl__slide--fifth">
+          <div class="sign-sl__block">
+            <p class="sign-sl__text">
+              Open Source Platform, decentralized ecosystem for high growth packaging industry participants and related services
+            </p>
+            <a href="" class="sign-sl__link">Learn more</a></div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination sign-sl__pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next sign-sl__button sign-sl__button--next"></div>
+      <div class="swiper-button-prev sign-sl__button sign-sl__button--prev"></div>
+    </div>
+  </section>
+</div>
+<script src="js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
+    speed: 700,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+</body>
+</html>

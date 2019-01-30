@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,800,900|Montserrat:400,500,800"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__wrapper">
+    <div class="header__logo">
+      <img src="images/logo.png" alt="Open Packaging Network" class="header__logo-icon">
+    </div>
+    <div class="header__balanse">
+      <p class="header__balatse-title">BALANCE:</p>
+      <p class="header__balanse__text"><span>9,981,050</span> OPK</p>
+    </div>
+    <div class="header__notification">
+      <img src="images/notification.png" alt="notification">
+    </div>
+    <div class="header__company">
+      <img class="header__company-icon" src="images/acronic.png" alt="company">
+      <span class="header__company-name">Arconic</span>
+    </div>
+  </div>
+</header>
+<div class="main-wrapper">
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="orders.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-orders"></use>
+          </svg>
+          <span>Orders</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="new-order.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-neworder"></use>
+          </svg>
+          <span>New order</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="27">
+            <use xlink:href="images/sprite.svg#icon-myorders"></use>
+          </svg>
+          <span>My orders</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-companyprofile"></use>
+          </svg>
+          <span>Company profile</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-documents"></use>
+          </svg>
+          <span>Documents</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link main-nav__link--active">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-buytokens"></use>
+          </svg>
+          <span>Buy Token</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="rating.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-rating"></use>
+          </svg>
+          <span>Rating</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="logistics.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-logistic"></use>
+          </svg>
+          <span>Logistics</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="password.html" class="main-nav__link">
+          <svg width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-settings"></use>
+          </svg>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main class="main">
+    <div class="main__wrapper">
+      <section class="token">
+        <div class="token__wrapper wrapper">
+          <header class="token__header">
+            <h2 class="token__title">Buy Token</h2>
+            <ul class="token__filter-list tabs">
+              <li class="token__filter-item tabs__item">
+                <a href="#tab1">Purchase options</a>
+              </li>
+              <li class="token__filter-item tabs__item">
+                <a href="#tab2">Transaction history</a>
+              </li>
+            </ul>
+            <div class="token__line"></div>
+          </header>
+          <div class="token__content">
+            <div class="token__options tabs__content" id="tab1">
+              <div class="token__wallet">
+                <div class="token__wallet-group">
+                  <form class="token__form" action="#">
+                    <h3 class="token__wallet-title">ETH Wallet</h3>
+                    <div class="token__input-group">
+                      <input type="text" class="token__input-wallet">
+                      <button class="token__button-exchange">
+                        <span>1 OPK</span>
+                        <img src="images/icon-exchange.png" alt="exchange">
+                        <span>1 USD</span>
+                      </button>
+                    </div>
+                    <div class="token__address">
+                      <p class="token__address-text">
+                        To buy tokens, send ETH to this address
+                      </p>
+                      <button class="button token__address-button">Copy address</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="token__wallet-qr">
+                  <img src="images/qr.png" alt="qr-code">
+                </div>
+              </div>
+              <div class="token__iframe-convert">
+                <iframe
+                  src="https://changelly.com/widget/v1?auth=email&from=USD&to=ETH&merchant_id=1bvgaw7cjlavx2ib&address=&amount=50&ref_id=1bvgaw7cjlavx2ib&color=56CCF2"
+                  width="100%"
+                  height="450"
+                  class="changelly"
+                  scrolling="no"
+                  style="overflow-y: hidden; border: 10px solid #fbfbfb;">
+                  Can't load widget
+                </iframe>
+              </div>
+            </div>
+            <div class="token__history tabs__content" id="tab2">
+              <div class="token__table">
+                <ul class="token__table-list">
+                  <li class="token__table-item token__table-item--date token__table-item--head">Date</li>
+                  <li class="token__table-item token__table-item--currency token__table-item--head">Currency</li>
+                  <li class="token__table-item token__table-item--info token__table-item--head">Info</li>
+                  <li class="token__table-item token__table-item--status token__table-item--head">Status</li>
+                </ul>
+                <ul class="token__table-list">
+                  <li class="token__table-item token__table-item--date">
+                    <p>2018-10-01</p>
+                    <p>01:51:01</p>
+                  </li>
+                  <li class="token__table-item token__table-item--currency">
+                    <p>-0.98091830 ETH</p>
+                    <p>86.98 OPK</p>
+                  </li>
+                  <li class="token__table-item token__table-item--info">
+                    <a href="#">blockexplorer.com</a>
+                  </li>
+                  <li class="token__table-item token__table-item--status">
+                    <p>Success</p>
+                  </li>
+                </ul>
+                <ul class="token__table-list">
+                  <li class="token__table-item token__table-item--date">
+                    <p>2018-01-01</p>
+                    <p>11:21:59</p>
+                  </li>
+                  <li class="token__table-item token__table-item--currency">
+                    <p>-0.09183712 ETH</p>
+                    <p>24.11 OPK</p>
+                  </li>
+                  <li class="token__table-item token__table-item--info">
+                    <a href="#">blockchain.info</a>
+                  </li>
+                  <li class="token__table-item token__table-item--status">
+                    <p>Success</p>
+                  </li>
+                </ul>
+                <ul class="token__table-list">
+                  <li class="token__table-item token__table-item--date">
+                    <p>2017-12-04</p>
+                    <p>13:35:00</p>
+                  </li>
+                  <li class="token__table-item token__table-item--currency">
+                    <p>-1.27654317 ETH</p>
+                    <p>100.77 OPK</p>
+                  </li>
+                  <li class="token__table-item token__table-item--info">
+                    <a href="#">blockcheckinfo.io</a>
+                  </li>
+                  <li class="token__table-item token__table-item--status">
+                    <p>Success</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <ul class="footer__info-list">
+          <li class="footer__info-item">
+            <a href="#">TERMS AND CONDITIONS</a>
+          </li>
+          <li class="footer__info-item">
+            <a href="#">PRIVACY POLICY</a>
+          </li>
+          <li class="footer__info-item">
+            <a href="#">COPYRIGHT</a>
+          </li>
+          <li class="footer__info-item">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-reddit-alien"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-medium-m"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Main navigation-->
+<script>
+  $('.main-nav__link').click(function() {
+    $('.main-nav__link--active').removeClass('main-nav__link--active');
+    $(this).addClass('main-nav__link--active');
+  });
+</script>
+<!--Tabs-->
+<script>
+  $('document').ready(function() {
+    $('.tabs__content').hide();
+    $('.tabs__content:first').show();
+    $('.tabs__item:first').addClass('tabs__item--active');
+
+    $('.tabs__item').click(function(evt) {
+      $('.tabs__item').removeClass('tabs__item--active');
+      $(this).addClass('tabs__item--active');
+      $('.tabs__content').hide();
+
+      var selectTab = $(this).find('a').attr('href');
+      $(selectTab).fadeIn();
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.logistics__title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.logistics__line {
+  height: 1px;
+  background-color: #DEE2ED;
+}
+
+.logistics__content {
+  padding-top: 48px;
+}
+
+.logistics__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.logistics__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}

@@ -1,0 +1,221 @@
+.sign-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+
+  @media (max-height: 500px) {
+    height: auto;
+  }
+
+  &--up {
+    @media (max-height: 590px) {
+      height: auto;
+    }
+  }
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 25px;
+  padding-left: 5.5%;
+  padding-right: 3.2%;
+  background-color: #066AFF;
+
+  @media #{$noDesktop} {
+    width: 100%;
+  }
+}
+
+.sign__header {
+  margin-bottom: 20px;
+}
+
+.sign__header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.sign__logo {
+  margin-right: 8px;
+}
+
+.sign__header-text {
+  margin: 0;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.sign__content {
+  margin: auto 0;
+}
+
+.sign__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 42px;
+  line-height: 51px;
+  color: #ffffff;
+
+  @media (max-height: 800px) {
+    margin-bottom: 25px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+.sign__form {
+  overflow: hidden;
+}
+
+.sign__input-group {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 25px;
+
+  @media (max-height: 800px) {
+    margin-bottom: 15px;
+  }
+}
+
+.sign__label {
+  position: relative;
+  display: block;
+  margin-bottom: 13px;
+  font-weight: 700;
+  color: #4AB2FD;
+  transition: all 0.5s;
+
+  @media (max-height: 800px) {
+    margin-bottom: 5px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s;
+  }
+
+  &--email::before {
+    bottom: -54px;
+    left: 25px;
+    background-image: url(../images/icon-email.png);
+
+    @media (max-height: 800px) {
+      bottom: -39px;
+    }
+  }
+
+  &--password::before {
+    bottom: -52px;
+    left: 25px;
+    background-image: url(../images/icon-password.png);
+
+    @media (max-height: 800px) {
+      bottom: -37px;
+    }
+  }
+}
+
+.sign__input {
+  padding: 24px 56px;
+  color: #ffffff;
+  border: 1px solid #4AB2FD;
+  background: transparent;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.5s;
+
+  @media (max-height: 800px) {
+    padding: 17px 56px;
+  }
+}
+
+.sign__input:focus {
+  border: 1px solid #ffffff;
+}
+
+.sign__input:focus + .sign__label {
+  color: #ffffff;
+}
+
+.sign__input:focus + .sign__label {
+  &--email::before {
+    background-image: url(../images/icon-email-focus.png);
+  }
+
+  &--password::before {
+    background-image: url(../images/icon-password-focus.png);
+  }
+}
+
+.sign__input::-webkit-input-placeholder {color: #4AB2FD;}
+.sign__input::-moz-placeholder          {color: #4AB2FD;}/* Firefox 19+ */
+.sign__input:-moz-placeholder           {color: #4AB2FD;}/* Firefox 18- */
+.sign__input:-ms-input-placeholder      {color: #4AB2FD;}
+
+
+.sign__forgot-link {
+  display: block;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (max-height: 800px) {
+    margin-bottom: 20px;
+    text-transform: initial;
+  }
+}
+
+.sign__button {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 45px;
+  padding: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #001AEB;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0014B2;
+  }
+
+  &:active {
+    background-color: #001093;
+  }
+
+  @media (max-height: 800px) {
+    margin-bottom: 30px;
+  }
+}
+
+.sign__text-up {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.sign__text-up a {
+  color: #ffffff;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

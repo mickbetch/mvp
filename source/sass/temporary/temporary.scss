@@ -1,0 +1,32 @@
+.temporary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  padding-left: 300px;
+  background-image: url(../images/slider-gr5.png);
+}
+
+.temporary__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 23px;
+  line-height: 26px;
+}
+
+.temporary__item {
+  margin-bottom: 12px;
+}
+
+.temporary__item a {
+  color: #ffffff;
+  transition: all 0.4s;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
